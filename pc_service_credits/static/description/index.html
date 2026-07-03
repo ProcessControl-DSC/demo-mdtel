@@ -1,0 +1,52 @@
+<section style="padding:32px 0; text-align:center; background:#0f4c81; color:#ffffff;">
+    <h1 style="color:#ffffff; font-size:34px; margin:0;">Bonos de créditos de servicio</h1>
+    <h3 style="color:#cfe0f0; font-weight:400; margin:8px 0 0;">pc_service_credits · Producto Process Control · Odoo 19</h3>
+</section>
+
+<section style="padding:28px 16px; max-width:900px; margin:0 auto; font-size:15px; color:#334155;">
+    <p>El cliente compra un <b>bono prepago de créditos</b>. Los operarios imputan horas
+    en tareas, tickets u órdenes de campo, y el sistema convierte esas horas en créditos
+    consumidos según el <b>rol</b> de quien imputa y la <b>franja horaria</b>, descontándolos
+    del monedero del cliente. Todo configurable, sin desarrollo por cliente.</p>
+
+    <h2 style="color:#0f4c81; border-bottom:2px solid #0f4c81; padding-bottom:6px;">Cómo funciona</h2>
+    <p>Créditos = horas × créditos-por-hora (rol) × multiplicador (franja). El rol se resuelve
+    en cascada empleado → puesto → categoría → tarifa por defecto. La franja (normal, fuera de
+    horario, nocturno, festivo) aplica su multiplicador. El consumo se descuenta del monedero
+    resuelto por la cascada de enrutado.</p>
+
+    <h2 style="color:#0f4c81; border-bottom:2px solid #0f4c81; padding-bottom:6px;">Funciones</h2>
+    <ul>
+        <li>Monederos por cliente, proyecto/analítica o <b>contrato OCA</b> (módulo puente).</li>
+        <li>Recarga por venta de un producto bono; caducidad de créditos <b>FIFO</b>.</li>
+        <li>Conversión rol × franja totalmente configurable; captura de hora manual, automática o híbrida.</li>
+        <li>Control de saldo: aviso, bloqueo o descubierto, con notificación por chatter.</li>
+        <li>Análisis dinámico (pivot y gráfico), <b>ritmo de consumo</b> y fecha estimada de agotamiento.</li>
+        <li>Portal del cliente: consulta de saldo y movimientos.</li>
+        <li>Ingreso diferido contable opcional (requiere validación contable).</li>
+    </ul>
+
+    <h2 style="color:#0f4c81; border-bottom:2px solid #0f4c81; padding-bottom:6px;">Monedero y saldo</h2>
+    <p>Cada monedero muestra el saldo, el ritmo de consumo y la fecha estimada de agotamiento,
+    con el historial completo de movimientos.</p>
+    <p style="text-align:center;"><img src="/pc_service_credits/static/description/monedero.png" style="max-width:100%; border:1px solid #cbd5e1;"/></p>
+
+    <h2 style="color:#0f4c81; border-bottom:2px solid #0f4c81; padding-bottom:6px;">Análisis y previsión</h2>
+    <p>Consumo cruzado por franja, tipo, técnico, cliente y periodo.</p>
+    <p style="text-align:center;"><img src="/pc_service_credits/static/description/analisis.png" style="max-width:100%; border:1px solid #cbd5e1;"/></p>
+
+    <h2 style="color:#0f4c81; border-bottom:2px solid #0f4c81; padding-bottom:6px;">Configuración</h2>
+    <p>Toda la parametrización vive en Ajustes → Créditos de servicio.</p>
+    <p style="text-align:center;"><img src="/pc_service_credits/static/description/ajustes.png" style="max-width:100%; border:1px solid #cbd5e1;"/></p>
+
+    <h2 style="color:#0f4c81; border-bottom:2px solid #0f4c81; padding-bottom:6px;">Ficha técnica</h2>
+    <ul>
+        <li>Modelos: service.credit.wallet, service.credit.move, service.credit.rate, service.credit.multiplier.</li>
+        <li>Consumo desde account.analytic.line (proyecto, Helpdesk y Field Service).</li>
+        <li>Puente pc_service_credits_contract sobre OCA contract 19.0.</li>
+        <li>Grupos de seguridad Usuario/Responsable y reglas multiempresa.</li>
+        <li>Licencia LGPL-3 · 38 tests automáticos.</li>
+    </ul>
+
+    <p style="margin-top:24px; color:#0f4c81;">Process Control — La confianza hecha servicio.</p>
+</section>
