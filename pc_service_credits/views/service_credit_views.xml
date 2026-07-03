@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Movimientos: acción filtrada por monedero (botón inteligente) -->
+    <record id="action_service_credit_move" model="ir.actions.act_window">
+        <field name="name">Movimientos de créditos</field>
+        <field name="res_model">service.credit.move</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="service_credit_move_view_list" model="ir.ui.view">
+        <field name="name">service.credit.move.list</field>
+        <field name="model">service.credit.move</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="date"/>
+                <field name="wallet_id"/>
+                <field name="partner_id"/>
+                <field name="move_type"/>
+                <field name="credit_amount" sum="Total"/>
+                <field name="expiry_date" optional="hide"/>
+                <field name="description" optional="show"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="service_credit_move_view_search" model="ir.ui.view">
+        <field name="name">service.credit.move.search</field>
+        <field name="model">service.credit.move</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="wallet_id"/>
+                <field name="partner_id"/>
+                <filter name="topup" string="Recargas" domain="[('move_type','=','topup')]"/>
+                <filter name="consumption" string="Consumos" domain="[('move_type','=','consumption')]"/>
+                <filter name="expiry" string="Caducidades" domain="[('move_type','=','expiry')]"/>
+                <separator/>
+                <filter name="g_wallet" string="Monedero" context="{'group_by':'wallet_id'}"/>
+                <filter name="g_type" string="Tipo" context="{'group_by':'move_type'}"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- Monederos -->
+    <record id="action_service_credit_wallet" model="ir.actions.act_window">
+        <field name="name">Monederos de créditos</field>
+        <field name="res_model">service.credit.wallet</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="service_credit_wallet_view_list" model="ir.ui.view">
+        <field name="name">service.credit.wallet.list</field>
+        <field name="model">service.credit.wallet</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="partner_id"/>
+                <field name="scope"/>
+                <field name="balance"/>
+                <field name="low_threshold" optional="hide"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="service_credit_wallet_view_form" model="ir.ui.view">
+        <field name="name">service.credit.wallet.form</field>
+        <field name="model">service.credit.wallet</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="%(action_service_credit_move)d" type="action"
+                                class="oe_stat_button" icon="fa-list"
+                                context="{'search_default_wallet_id': id, 'default_wallet_id': id}">
+                            <field name="move_count" widget="statinfo" string="Movimientos"/>
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <h1><field name="name" readonly="1"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="partner_id"/>
+                            <field name="scope"/>
+                            <field name="analytic_account_id" invisible="scope != 'analytic'"/>
+                            <field name="project_id" invisible="scope != 'project'"/>
+                        </group>
+                        <group>
+                            <field name="balance"/>
+                            <field name="credit_basis"/>
+                            <field name="currency_id" invisible="credit_basis != 'money'"/>
+                            <field name="low_threshold"/>
+                            <field name="burn_rate"/>
+                            <field name="runout_date"/>
+                            <field name="active"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                        </group>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tarifas -->
+    <record id="action_service_credit_rate" model="ir.actions.act_window">
+        <field name="name">Tarifas de créditos</field>
+        <field name="res_model">service.credit.rate</field>
+        <field name="view_mode">list</field>
+    </record>
+
+    <record id="service_credit_rate_view_list" model="ir.ui.view">
+        <field name="name">service.credit.rate.list</field>
+        <field name="model">service.credit.rate</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="dimension"/>
+                <field name="employee_id" invisible="dimension != 'employee'"/>
+                <field name="job_id" invisible="dimension != 'job'"/>
+                <field name="category_id" invisible="dimension != 'category'"/>
+                <field name="credits_per_hour"/>
+                <field name="active" optional="hide"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Multiplicadores -->
+    <record id="action_service_credit_multiplier" model="ir.actions.act_window">
+        <field name="name">Multiplicadores por franja</field>
+        <field name="res_model">service.credit.multiplier</field>
+        <field name="view_mode">list</field>
+    </record>
+
+    <record id="service_credit_multiplier_view_list" model="ir.ui.view">
+        <field name="name">service.credit.multiplier.list</field>
+        <field name="model">service.credit.multiplier</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="bracket"/>
+                <field name="factor"/>
+                <field name="active" optional="hide"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+            </list>
+        </field>
+    </record>
+
+</odoo>

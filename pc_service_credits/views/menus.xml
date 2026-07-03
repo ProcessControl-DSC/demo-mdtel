@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <menuitem id="menu_service_credit_root" name="Créditos de servicio"
+              sequence="90"/>
+
+    <menuitem id="menu_service_credit_wallet" name="Monederos"
+              parent="menu_service_credit_root"
+              action="action_service_credit_wallet" sequence="10"/>
+
+    <menuitem id="menu_service_credit_move" name="Movimientos"
+              parent="menu_service_credit_root"
+              action="action_service_credit_move" sequence="20"/>
+
+    <menuitem id="menu_service_credit_config" name="Configuración"
+              parent="menu_service_credit_root" sequence="90"/>
+
+    <menuitem id="menu_service_credit_rate" name="Tarifas"
+              parent="menu_service_credit_config"
+              action="action_service_credit_rate" sequence="10"/>
+
+    <menuitem id="menu_service_credit_multiplier" name="Multiplicadores"
+              parent="menu_service_credit_config"
+              action="action_service_credit_multiplier" sequence="20"/>
+</odoo>

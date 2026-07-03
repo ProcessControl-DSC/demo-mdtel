@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="portal_my_home_service_credit" inherit_id="portal.portal_my_home"
+              name="Portal My Home: Service Credits">
+        <xpath expr="//div[hasclass('o_portal_docs')]" position="inside">
+            <t t-call="portal.portal_docs_entry">
+                <t t-set="title">Créditos de servicio</t>
+                <t t-set="url" t-value="'/my/service_credits'"/>
+                <t t-set="text">Consulta el saldo de tus bonos</t>
+                <t t-set="placeholder_count" t-value="'credit_count'"/>
+            </t>
+        </xpath>
+    </template>
+
+    <template id="portal_my_service_credits" name="My Service Credits">
+        <t t-call="portal.portal_layout">
+            <t t-set="breadcrumbs_searchbar" t-value="True"/>
+            <t t-set="title">Créditos de servicio</t>
+            <div class="container">
+                <h3 class="mt-3">Mis bonos de créditos</h3>
+                <t t-if="not wallets">
+                    <p>No tiene monederos de créditos.</p>
+                </t>
+                <t t-if="wallets">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Monedero</th>
+                                <th class="text-end">Saldo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="wallets" t-as="wallet">
+                                <td>
+                                    <a t-attf-href="/my/service_credits/#{wallet.id}">
+                                        <t t-esc="wallet.name"/>
+                                    </a>
+                                </td>
+                                <td class="text-end"><t t-esc="wallet.balance"/></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </t>
+            </div>
+        </t>
+    </template>
+
+    <template id="portal_service_credit_detail" name="Service Credit Detail">
+        <t t-call="portal.portal_layout">
+            <t t-set="title">Créditos de servicio</t>
+            <div class="container">
+                <h3 class="mt-3"><t t-esc="wallet.name"/></h3>
+                <p>Saldo actual: <strong><t t-esc="wallet.balance"/></strong></p>
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Tipo</th>
+                            <th class="text-end">Créditos</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr t-foreach="moves" t-as="move">
+                            <td><t t-esc="move.date"/></td>
+                            <td><t t-esc="move.move_type"/></td>
+                            <td class="text-end"><t t-esc="move.credit_amount"/></td>
+                            <td><t t-esc="move.description"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </t>
+    </template>
+</odoo>

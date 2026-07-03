@@ -1,0 +1,35 @@
+# Copyright 2026 Process Control
+# License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl-3.0).
+{
+    "name": "Service Credits (bonos de créditos de servicio)",
+    "version": "19.0.1.0.0",
+    "category": "Services",
+    "summary": "Prepaid service credit wallets consumed from timesheets by role and time bracket",
+    "author": "Process Control",
+    "website": "https://www.processcontrol.es",
+    "license": "LGPL-3",
+    "depends": [
+        "base",
+        "mail",
+        "product",
+        "account",
+        "analytic",
+        "sale",
+        "project",
+        "hr_timesheet",
+        "resource",
+        "portal",
+    ],
+    "data": [
+        "security/service_credit_security.xml",
+        "security/ir.model.access.csv",
+        "data/ir_cron.xml",
+        "views/service_credit_views.xml",
+        "views/res_config_settings_views.xml",
+        "views/menus.xml",
+        "views/service_credit_analysis_views.xml",
+        "views/portal_templates.xml",
+    ],
+    "installable": True,
+    "application": False,
+}

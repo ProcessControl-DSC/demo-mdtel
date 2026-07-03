@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="service_credit_move_view_pivot" model="ir.ui.view">
+        <field name="name">service.credit.move.pivot</field>
+        <field name="model">service.credit.move</field>
+        <field name="arch" type="xml">
+            <pivot string="Análisis de créditos">
+                <field name="origin_bracket" type="row"/>
+                <field name="move_type" type="col"/>
+                <field name="credit_amount" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <record id="service_credit_move_view_graph" model="ir.ui.view">
+        <field name="name">service.credit.move.graph</field>
+        <field name="model">service.credit.move</field>
+        <field name="arch" type="xml">
+            <graph string="Análisis de créditos" type="bar">
+                <field name="partner_id"/>
+                <field name="credit_amount" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <record id="action_service_credit_analysis" model="ir.actions.act_window">
+        <field name="name">Análisis de créditos</field>
+        <field name="res_model">service.credit.move</field>
+        <field name="view_mode">pivot,graph,list</field>
+    </record>
+
+    <menuitem id="menu_service_credit_analysis" name="Análisis"
+              parent="menu_service_credit_root"
+              action="action_service_credit_analysis" sequence="30"/>
+</odoo>

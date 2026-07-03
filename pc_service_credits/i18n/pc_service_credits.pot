@@ -1,0 +1,922 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pc_service_credits
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e-20260619\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-03 14:00+0000\n"
+"PO-Revision-Date: 2026-07-03 14:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: pc_service_credits
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__service_credit_wallet__credit_basis__abstract
+msgid "Abstract"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_move__account_move_id
+msgid "Account Move"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: pc_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.res_config_settings_view_form_service_credit
+msgid "Activa el consumo de créditos por imputación"
+msgstr ""
+
+#. module: pc_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.res_config_settings_view_form_service_credit
+msgid "Activación"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_multiplier__active
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_rate__active
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__active
+msgid "Active"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__service_credit_move__move_type__adjustment
+msgid "Adjustment"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__account_analytic_line__credit_time_bracket__after_hours
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__service_credit_multiplier__bracket__after_hours
+msgid "After hours"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__res_company__service_credit_shortage_policy__overdraft
+msgid "Allow overdraft"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__analytic_account_id
+msgid "Analytic Account"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model,name:pc_service_credits.model_account_analytic_line
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_move__analytic_line_id
+msgid "Analytic Line"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__service_credit_wallet__scope__analytic
+msgid "Analytic account"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.ui.menu,name:pc_service_credits.menu_service_credit_analysis
+msgid "Análisis"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.actions.act_window,name:pc_service_credits.action_service_credit_analysis
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.service_credit_move_view_graph
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.service_credit_move_view_pivot
+msgid "Análisis de créditos"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__res_company__service_credit_fallback_policy__ask
+msgid "Ask to select"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__res_company__service_credit_time_mode__auto
+msgid "Automatic from datetime"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__balance
+msgid "Balance"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__res_company__service_credit_fallback_policy__block
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__res_company__service_credit_shortage_policy__block
+msgid "Block"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_multiplier__bracket
+msgid "Bracket"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__burn_rate
+msgid "Burn Rate"
+msgstr ""
+
+#. module: pc_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.service_credit_move_view_search
+msgid "Caducidades"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_rate__category_id
+msgid "Category"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model,name:pc_service_credits.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_move__company_id
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_multiplier__company_id
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_rate__company_id
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__company_id
+msgid "Company"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model,name:pc_service_credits.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.ui.menu,name:pc_service_credits.menu_service_credit_config
+msgid "Configuración"
+msgstr ""
+
+#. module: pc_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.portal_my_home_service_credit
+msgid "Consulta el saldo de tus bonos"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,help:pc_service_credits.field_service_credit_wallet__burn_rate
+msgid "Consumo medio de créditos por día"
+msgstr ""
+
+#. module: pc_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.service_credit_move_view_search
+msgid "Consumos"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__service_credit_move__move_type__consumption
+msgid "Consumption"
+msgstr ""
+
+#. module: pc_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.res_config_settings_view_form_service_credit
+msgid "Conversión"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_move__create_uid
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_multiplier__create_uid
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_rate__create_uid
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_move__create_date
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_multiplier__create_date
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_rate__create_date
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_move__credit_amount
+msgid "Credit Amount"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__credit_basis
+msgid "Credit Basis"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_account_analytic_line__credit_datetime
+msgid "Credit Datetime"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_account_analytic_line__credit_move_ids
+msgid "Credit Move"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_account_analytic_line__credit_time_bracket
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_move__origin_bracket
+msgid "Credit Time Bracket"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_rate__credits_per_hour
+msgid "Credits Per Hour"
+msgstr ""
+
+#. module: pc_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.portal_service_credit_detail
+msgid "Créditos"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.ui.menu,name:pc_service_credits.menu_service_credit_root
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.portal_my_home_service_credit
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.portal_my_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.portal_service_credit_detail
+msgid "Créditos de servicio"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__currency_id
+msgid "Currency"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_move__date
+msgid "Date"
+msgstr ""
+
+#. module: pc_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.res_config_settings_view_form_service_credit
+msgid "Default credits/hour"
+msgstr ""
+
+#. module: pc_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.res_config_settings_view_form_service_credit
+msgid "Deferred revenue recognition"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,help:pc_service_credits.field_service_credit_move__origin_employee_id
+msgid ""
+"Define an 'hourly cost' on the employee to track the cost of their time."
+msgstr ""
+
+#. module: pc_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.portal_service_credit_detail
+msgid "Descripción"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_move__description
+msgid "Description"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_rate__dimension
+msgid "Dimension"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_account_analytic_line__display_name
+#: model:ir.model.fields,field_description:pc_service_credits.field_product_template__display_name
+#: model:ir.model.fields,field_description:pc_service_credits.field_project_project__display_name
+#: model:ir.model.fields,field_description:pc_service_credits.field_project_task__display_name
+#: model:ir.model.fields,field_description:pc_service_credits.field_res_company__display_name
+#: model:ir.model.fields,field_description:pc_service_credits.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:pc_service_credits.field_sale_order__display_name
+#: model:ir.model.fields,field_description:pc_service_credits.field_sale_order_line__display_name
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_move__display_name
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_multiplier__display_name
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_rate__display_name
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_move__origin_employee_id
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_rate__employee_id
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__service_credit_rate__dimension__employee
+msgid "Employee"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__service_credit_rate__dimension__category
+msgid "Employee category"
+msgstr ""
+
+#. module: pc_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.res_config_settings_view_form_service_credit
+msgid "Enable service credits"
+msgstr ""
+
+#. module: pc_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.res_config_settings_view_form_service_credit
+msgid "Enrutado y escasez"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__service_credit_move__move_type__expiry
+msgid "Expiry"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_move__expiry_date
+msgid "Expiry Date"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_multiplier__factor
+msgid "Factor"
+msgstr ""
+
+#. module: pc_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.portal_service_credit_detail
+msgid "Fecha"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,help:pc_service_credits.field_service_credit_wallet__runout_date
+msgid "Fecha estimada de agotamiento"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: pc_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.res_config_settings_view_form_service_credit
+msgid "Franja horaria"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__service_credit_wallet__scope__general
+msgid "General (customer)"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__account_analytic_line__credit_time_bracket__holiday
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__service_credit_multiplier__bracket__holiday
+msgid "Holiday"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__res_company__service_credit_time_mode__hybrid
+msgid "Hybrid"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_account_analytic_line__id
+#: model:ir.model.fields,field_description:pc_service_credits.field_product_template__id
+#: model:ir.model.fields,field_description:pc_service_credits.field_project_project__id
+#: model:ir.model.fields,field_description:pc_service_credits.field_project_task__id
+#: model:ir.model.fields,field_description:pc_service_credits.field_res_company__id
+#: model:ir.model.fields,field_description:pc_service_credits.field_res_config_settings__id
+#: model:ir.model.fields,field_description:pc_service_credits.field_sale_order__id
+#: model:ir.model.fields,field_description:pc_service_credits.field_sale_order_line__id
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_move__id
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_multiplier__id
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_rate__id
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__id
+msgid "ID"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,help:pc_service_credits.field_service_credit_wallet__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,help:pc_service_credits.field_service_credit_wallet__message_has_error
+#: model:ir.model.fields,help:pc_service_credits.field_service_credit_wallet__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: pc_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.res_config_settings_view_form_service_credit
+msgid "Ingreso diferido (requiere validación contable)"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_product_product__is_service_credit_bono
+#: model:ir.model.fields,field_description:pc_service_credits.field_product_template__is_service_credit_bono
+msgid "Is Service Credit Bono"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_rate__job_id
+msgid "Job"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__service_credit_rate__dimension__job
+msgid "Job position"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_move__write_uid
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_multiplier__write_uid
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_rate__write_uid
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_move__write_date
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_multiplier__write_date
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_rate__write_date
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_move__lot_date
+msgid "Lot Date"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__low_threshold
+msgid "Low Threshold"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__res_company__service_credit_time_mode__manual
+msgid "Manual selector"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: pc_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.portal_my_service_credits
+msgid "Mis bonos de créditos"
+msgstr ""
+
+#. module: pc_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.portal_my_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.service_credit_move_view_search
+msgid "Monedero"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.ui.menu,name:pc_service_credits.menu_service_credit_wallet
+msgid "Monederos"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.actions.act_window,name:pc_service_credits.action_service_credit_wallet
+msgid "Monederos de créditos"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__service_credit_wallet__credit_basis__money
+msgid "Money-equivalent"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__move_ids
+msgid "Move"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__move_count
+msgid "Move Count"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_move__move_type
+msgid "Move Type"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.ui.menu,name:pc_service_credits.menu_service_credit_move
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.service_credit_wallet_view_form
+msgid "Movimientos"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.actions.act_window,name:pc_service_credits.action_service_credit_move
+msgid "Movimientos de créditos"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.ui.menu,name:pc_service_credits.menu_service_credit_multiplier
+msgid "Multiplicadores"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.actions.act_window,name:pc_service_credits.action_service_credit_multiplier
+msgid "Multiplicadores por franja"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_move__name
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_multiplier__name
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_rate__name
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__name
+msgid "Name"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__account_analytic_line__credit_time_bracket__night
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__service_credit_multiplier__bracket__night
+msgid "Night"
+msgstr ""
+
+#. module: pc_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.res_config_settings_view_form_service_credit
+msgid "Night window"
+msgstr ""
+
+#. module: pc_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.portal_my_service_credits
+msgid "No tiene monederos de créditos."
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__account_analytic_line__credit_time_bracket__normal
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__service_credit_multiplier__bracket__normal
+msgid "Normal"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,help:pc_service_credits.field_service_credit_wallet__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,help:pc_service_credits.field_service_credit_wallet__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: pc_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.res_config_settings_view_form_service_credit
+msgid "Overdraft limit"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_move__partner_id
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__partner_id
+msgid "Partner"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model,name:pc_service_credits.model_product_template
+msgid "Product"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model,name:pc_service_credits.model_project_project
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_move__origin_project_id
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__project_id
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__service_credit_wallet__scope__project
+msgid "Project"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__rating_ids
+msgid "Ratings"
+msgstr ""
+
+#. module: pc_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.service_credit_move_view_search
+msgid "Recargas"
+msgstr ""
+
+#. module: pc_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.res_config_settings_view_form_service_credit
+msgid ""
+"Reconoce ingreso al consumir créditos. Activar solo tras validación "
+"contable."
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__service_credit_move__move_type__reversal
+msgid "Reversal"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_move__reversed_move_id
+msgid "Reversed Move"
+msgstr ""
+
+#. module: pc_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.res_config_settings_view_form_service_credit
+msgid "Routing fallback"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__runout_date
+msgid "Runout Date"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: pc_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.portal_my_service_credits
+msgid "Saldo"
+msgstr ""
+
+#. module: pc_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.portal_service_credit_detail
+msgid "Saldo actual:"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_move__sale_line_id
+msgid "Sale Line"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model,name:pc_service_credits.model_sale_order
+msgid "Sales Order"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model,name:pc_service_credits.model_sale_order_line
+msgid "Sales Order Line"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__scope
+msgid "Scope"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_res_company__service_credit_default_rate
+#: model:ir.model.fields,field_description:pc_service_credits.field_res_config_settings__service_credit_default_rate
+msgid "Service Credit Default Rate"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_res_company__service_credit_deferred_account_id
+#: model:ir.model.fields,field_description:pc_service_credits.field_res_config_settings__service_credit_deferred_account_id
+msgid "Service Credit Deferred Account"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_res_company__service_credit_deferred_enabled
+#: model:ir.model.fields,field_description:pc_service_credits.field_res_config_settings__service_credit_deferred_enabled
+msgid "Service Credit Deferred Enabled"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_res_company__service_credit_deferred_journal_id
+#: model:ir.model.fields,field_description:pc_service_credits.field_res_config_settings__service_credit_deferred_journal_id
+msgid "Service Credit Deferred Journal"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_res_company__service_credit_enabled
+#: model:ir.model.fields,field_description:pc_service_credits.field_res_config_settings__service_credit_enabled
+msgid "Service Credit Enabled"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_res_company__service_credit_fallback_policy
+#: model:ir.model.fields,field_description:pc_service_credits.field_res_config_settings__service_credit_fallback_policy
+msgid "Service Credit Fallback Policy"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_product_product__service_credit_granted
+#: model:ir.model.fields,field_description:pc_service_credits.field_product_template__service_credit_granted
+msgid "Service Credit Granted"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_res_company__service_credit_income_account_id
+#: model:ir.model.fields,field_description:pc_service_credits.field_res_config_settings__service_credit_income_account_id
+msgid "Service Credit Income Account"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model,name:pc_service_credits.model_service_credit_move
+msgid "Service Credit Move"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model,name:pc_service_credits.model_service_credit_multiplier
+msgid "Service Credit Multiplier"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_res_company__service_credit_night_end
+#: model:ir.model.fields,field_description:pc_service_credits.field_res_config_settings__service_credit_night_end
+msgid "Service Credit Night End"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_res_company__service_credit_night_start
+#: model:ir.model.fields,field_description:pc_service_credits.field_res_config_settings__service_credit_night_start
+msgid "Service Credit Night Start"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_res_company__service_credit_overdraft_limit
+#: model:ir.model.fields,field_description:pc_service_credits.field_res_config_settings__service_credit_overdraft_limit
+msgid "Service Credit Overdraft Limit"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model,name:pc_service_credits.model_service_credit_rate
+msgid "Service Credit Rate"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_res_company__service_credit_shortage_policy
+#: model:ir.model.fields,field_description:pc_service_credits.field_res_config_settings__service_credit_shortage_policy
+msgid "Service Credit Shortage Policy"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_res_company__service_credit_time_mode
+#: model:ir.model.fields,field_description:pc_service_credits.field_res_config_settings__service_credit_time_mode
+msgid "Service Credit Time Mode"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_product_product__service_credit_validity_months
+#: model:ir.model.fields,field_description:pc_service_credits.field_product_template__service_credit_validity_months
+msgid "Service Credit Validity Months"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_res_company__service_credit_value_per_credit
+#: model:ir.model.fields,field_description:pc_service_credits.field_res_config_settings__service_credit_value_per_credit
+msgid "Service Credit Value Per Credit"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model,name:pc_service_credits.model_service_credit_wallet
+msgid "Service Credit Wallet"
+msgstr ""
+
+#. module: pc_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.res_config_settings_view_form_service_credit
+msgid "Service Credits"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:res.groups,name:pc_service_credits.group_service_credit_manager
+msgid "Service Credits / Manager"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:res.groups,name:pc_service_credits.group_service_credit_user
+msgid "Service Credits / User"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.actions.server,name:pc_service_credits.cron_expire_service_credits_ir_actions_server
+msgid "Service Credits: expire lots (FIFO)"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_project_project__credit_wallet_target_id
+#: model:ir.model.fields,field_description:pc_service_credits.field_project_task__credit_wallet_target_id
+msgid "Service credit wallet"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_account_analytic_line__credit_wallet_id
+msgid "Service credit wallet (override)"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_sale_order_line__credit_wallet_id
+msgid "Service credit wallet (top-up target)"
+msgstr ""
+
+#. module: pc_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.res_config_settings_view_form_service_credit
+msgid "Shortage policy"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.ui.menu,name:pc_service_credits.menu_service_credit_rate
+msgid "Tarifas"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.actions.act_window,name:pc_service_credits.action_service_credit_rate
+msgid "Tarifas de créditos"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model,name:pc_service_credits.model_project_task
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_move__origin_task_id
+msgid "Task"
+msgstr ""
+
+#. module: pc_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.res_config_settings_view_form_service_credit
+msgid "Time capture mode"
+msgstr ""
+
+#. module: pc_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.portal_service_credit_detail
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.service_credit_move_view_search
+msgid "Tipo"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__service_credit_move__move_type__topup
+msgid "Top-up"
+msgstr ""
+
+#. module: pc_service_credits
+#: model_terms:ir.ui.view,arch_db:pc_service_credits.service_credit_move_view_list
+msgid "Total"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__res_company__service_credit_fallback_policy__general
+msgid "Use general wallet"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,help:pc_service_credits.field_project_task__display_name
+msgid ""
+"Use these keywords in the title to set new tasks:\n"
+"\n"
+"        30h Allocate 30 hours to the task\n"
+"        #tags Set tags on the task\n"
+"        @user Assign the task to a user\n"
+"        ! Set the task a medium priority\n"
+"        !! Set the task a high priority\n"
+"        !!! Set the task a urgent priority\n"
+"\n"
+"        Make sure to use the right format and order e.g. Improve the configuration screen 5h #feature #v16 @Mitchell !"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_move__wallet_id
+msgid "Wallet"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__res_company__service_credit_shortage_policy__warn
+msgid "Warn"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,field_description:pc_service_credits.field_service_credit_wallet__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields,help:pc_service_credits.field_service_credit_wallet__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: pc_service_credits
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__account_analytic_line__credit_time_bracket__weekend
+#: model:ir.model.fields.selection,name:pc_service_credits.selection__service_credit_multiplier__bracket__weekend
+msgid "Weekend"
+msgstr ""

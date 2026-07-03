@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_wallet_user,wallet.user,model_service_credit_wallet,group_service_credit_user,1,0,0,0
+access_wallet_manager,wallet.manager,model_service_credit_wallet,group_service_credit_manager,1,1,1,1
+access_move_user,move.user,model_service_credit_move,group_service_credit_user,1,0,0,0
+access_move_manager,move.manager,model_service_credit_move,group_service_credit_manager,1,1,1,1
+access_rate_user,rate.user,model_service_credit_rate,group_service_credit_user,1,0,0,0
+access_rate_manager,rate.manager,model_service_credit_rate,group_service_credit_manager,1,1,1,1
+access_multiplier_user,multiplier.user,model_service_credit_multiplier,group_service_credit_user,1,0,0,0
+access_multiplier_manager,multiplier.manager,model_service_credit_multiplier,group_service_credit_manager,1,1,1,1

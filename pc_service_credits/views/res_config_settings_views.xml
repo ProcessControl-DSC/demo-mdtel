@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_service_credit" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.service.credit</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="inside">
+                <app string="Service Credits" name="pc_service_credits">
+                    <block title="Activación" name="sc_enable">
+                        <setting string="Enable service credits" help="Activa el consumo de créditos por imputación">
+                            <field name="service_credit_enabled"/>
+                        </setting>
+                    </block>
+                    <block title="Conversión" name="sc_conv">
+                        <setting string="Default credits/hour">
+                            <field name="service_credit_default_rate"/>
+                        </setting>
+                    </block>
+                    <block title="Franja horaria" name="sc_time">
+                        <setting string="Time capture mode">
+                            <field name="service_credit_time_mode"/>
+                        </setting>
+                        <setting string="Night window">
+                            <field name="service_credit_night_start"/>
+                            <field name="service_credit_night_end"/>
+                        </setting>
+                    </block>
+                    <block title="Enrutado y escasez" name="sc_route">
+                        <setting string="Routing fallback">
+                            <field name="service_credit_fallback_policy"/>
+                        </setting>
+                        <setting string="Shortage policy">
+                            <field name="service_credit_shortage_policy"/>
+                        </setting>
+                        <setting string="Overdraft limit">
+                            <field name="service_credit_overdraft_limit"/>
+                        </setting>
+                    </block>
+                    <block title="Ingreso diferido (requiere validación contable)" name="sc_deferred">
+                        <setting string="Deferred revenue recognition" help="Reconoce ingreso al consumir créditos. Activar solo tras validación contable.">
+                            <field name="service_credit_deferred_enabled"/>
+                            <div invisible="not service_credit_deferred_enabled" class="mt8">
+                                <field name="service_credit_deferred_journal_id"/>
+                                <field name="service_credit_deferred_account_id"/>
+                                <field name="service_credit_income_account_id"/>
+                                <field name="service_credit_value_per_credit"/>
+                            </div>
+                        </setting>
+                    </block>
+                </app>
+            </xpath>
+        </field>
+    </record>
+</odoo>
